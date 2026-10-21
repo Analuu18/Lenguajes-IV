@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguajes IV - Índice de Trabajos Prácticos</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+            --text-main: #c9d1d9;
+            --text-header: #ffffff;
+            --accent-color: #58a6ff;
+            --accent-hover: #1f6feb;
+            --badge-done-bg: #238636;
+            --badge-done-text: #ffffff;
+            --badge-pending-bg: #9e6a03;
+            --badge-pending-text: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            color: var(--text-header);
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: #8b949e;
+            font-size: 1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent-color);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+
+        .card-title {
+            color: var(--text-header);
+            font-size: 1.15rem;
+            font-weight: 600;
+        }
+
+        .badge {
+            font-size: 0.75rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .badge.completado {
+            background-color: var(--badge-done-bg);
+            color: var(--badge-done-text);
+        }
+
+        .badge.pendiente {
+            background-color: var(--badge-pending-bg);
+            color: var(--badge-pending-text);
+        }
+
+        .card-description {
+            font-size: 0.9rem;
+            color: #8b949e;
+            margin-bottom: 1.25rem;
+        }
+
+        .card-link {
+            display: inline-block;
+            text-decoration: none;
+            background-color: var(--accent-hover);
+            color: #ffffff;
+            text-align: center;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: background-color 0.2s ease;
+        }
+
+        .card-link:hover {
+            background-color: var(--accent-color);
+            color: #0d1117;
+        }
+
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1.5rem;
+            font-size: 0.85rem;
+            color: #8b949e;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Lenguajes IV — Portal de Contenidos</h1>
+            <p>Repositorio de Trabajos Prácticos y Módulos de la materia</p>
+        </header>
+
+        <main class="grid">
+            <!-- Módulo / Clase 1 -->
+            <article class="card">
+                <div>
+                    <div class="card-header">
+                        <h2 class="card-title">Clase 1</h2>
+                        <span class="badge completado">Completado</span>
+                    </div>
+                    <p class="card-description">Introducción a la materia, conceptos básicos y maquetado inicial en HTML/CSS.</p>
+                </div>
+                <a href="./clase_1_LIV.html" class="card-link">Ver Clase 1</a>
+            </article>
+
+            <!-- Proyecto SAE (Test) -->
+            <article class="card">
+                <div>
+                    <div class="card-header">
+                        <h2 class="card-title">Proyecto SAE</h2>
+                        <span class="badge completado">Completado</span>
+                    </div>
+                    <p class="card-description">Módulo del sistema SAE y pruebas de componentes principales.</p>
+                </div>
+                <a href="./test/proyectosae/index.html" class="card-link">Ver Proyecto SAE</a>
+            </article>
+
+            <!-- Módulo React -->
+            <article class="card">
+                <div>
+                    <div class="card-header">
+                        <h2 class="card-title">Clase 5 — React</h2>
