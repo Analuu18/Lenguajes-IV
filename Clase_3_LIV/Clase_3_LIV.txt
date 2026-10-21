@@ -1,0 +1,5 @@
+sección elegir un archivo png y cargarlo 
+debe aparecer nombre del archivo extensión y tamano
+usar css
+librerias no incorporadas en vsc--> importar librerias
+Usar filereader
